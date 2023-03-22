@@ -149,10 +149,16 @@ header {
     padding: 20px;
   }
 
+  
+
   /*Estilos Tarjetas*/
   .card-container {
-    display: flex;
+    display: flex; /* Establecer el display en flex */
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    align-items: center; /* Centrar verticalmente el contenido */
     flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
     gap: 20px;
   }
   
