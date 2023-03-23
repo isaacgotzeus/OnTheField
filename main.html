@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
     
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/e794652125.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="style.css">
     
@@ -19,23 +20,66 @@
     <header>
         <div class="container">
             <a href="main.html" class="logo">OnTheField</a>
-            <nav>
-                <ul>
-                    <li><a href="/sportView.html">Soccer</a></li>
-                    <li><a href="#">Basketball</a></li>
-                    <li><a href="#">Volleyball</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
     <section class="hero">
         <div class="container">
             <h1>OntheField: The Ultimate Sports Data Platform</h1>
-            <p>Get the latest scores, stats, and insights for all your favorite sports.</p>
-            <a href="#" class="button">Learn More</a>
         </div>
     </section>
     
+<!--Imagenes Carrousel-->
+
+  
+<section class="pt-5 pb-5">
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <div class="row">
+
+                              <div class="col-md-4 mb-3" id="dataImg">
+                                 <img src="imgs/cuervo.jpg" style="width: 70%;">
+                              </div>
+                              <div class="col-md-4 mb-3" id="dataImg1">
+                                <img src="imgs/mx.jpg" style="width: 80%;">
+                              </div>
+                              <div class="col-md-4 mb-3" id="dataImg2">
+                                <img src="imgs/kings.jpg" style="width: 70%;">
+                              </div>
+
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="row">
+
+                            <div class="col-md-4 mb-3" id="dataImg">
+                              <img src="imgs/santander.jpg" style="width: 60%;">
+                           </div>
+                           <div class="col-md-4 mb-3" id="dataImg1">
+                             <img src="imgs/champions.jpg" style="width: 80%;">
+                           </div>
+                           <div class="col-md-4 mb-3" id="dataImg2">
+                             <img src="imgs/serie a.jpg" style="width: 100%;">
+                           </div>
+
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+    
+  
+
+
     <section class="pt-5 pb-5">
       <div class="container">
           <div class="row">
@@ -44,10 +88,10 @@
               </div>
               <div class="col-6 text-right">
                   <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev" style="width: 50px; height: 50px;">
-                      <i class="fa fa-arrow-left"></i>
+                      <i class="arrow-left"></i>
                   </a>
                   <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next" style="width: 50px; height: 50px;">
-                    <i class="bi bi-arrow-right"></i>
+                    <i class="arrow-right"></i>
                   </a>
               </div>
               <div class="col-12">
@@ -104,10 +148,10 @@
             </div>
             <div class="col-6 text-right">
                 <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators22" role="button" data-slide="prev" style="width: 50px; height: 50px;">
-                    <i class="fa fa-arrow-left"></i>
+                    <i class="arrow-left"></i>
                 </a>
                 <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators22" role="button" data-slide="next" style="width: 50px; height: 50px;">
-                    <i class="fa fa-arrow-right"></i>
+                    <i class="arrow-right"></i>
                 </a>
             </div>
             <div class="col-12">
@@ -161,10 +205,10 @@
           </div>
           <div class="col-6 text-right">
               <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators222" role="button" data-slide="prev" style="width: 50px; height: 50px;">
-                  <i class="fa fa-arrow-left"></i>
+                  <i class="arrow-left"></i>
               </a>
               <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators222" role="button" data-slide="next" style="width: 50px; height: 50px;">
-                  <i class="fa fa-arrow-right"></i>
+                  <i class="arrow-right"></i>
               </a>
           </div>
           <div class="col-12">
@@ -218,7 +262,7 @@
       const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '91f1f9f28dmshefae46cc03fb424p10a296jsn88d8773aa986',
+            'X-RapidAPI-Key': '91f1f9f28dmshefae46cc03fb424p10a296jsn88d8773aa9',
             'X-RapidAPI-Host': 'sofasport.p.rapidapi.com'
         }
       };
@@ -320,7 +364,7 @@
     const options1 = {
       method: 'GET',
       headers: {
-        'X-RapidAPI-Key': '91f1f9f28dmshefae46cc03fb424p10a296jsn88d8773aa986',
+        'X-RapidAPI-Key': 'cc0fb5a26bmsh0d5ed101ed492e7p176a22jsn5749a5e006c',
         'X-RapidAPI-Host': 'basketapi1.p.rapidapi.com'
       }
     };
@@ -427,7 +471,7 @@
         headers: {
           'Content-Type': 'application/json',
           Connection: 'keep-alive',
-          'X-RapidAPI-Key': '91f1f9f28dmshefae46cc03fb424p10a296jsn88d8773aa986',
+          'X-RapidAPI-Key': '91f1f9f28dmshefae46cc03fb424p10a296jsn88d8773aa9',
           'X-RapidAPI-Host': 'daily-betting-tips.p.rapidapi.com'
 	      }
       };
@@ -529,6 +573,7 @@
         }
         
       </script>
+
 
 
   </body>

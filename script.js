@@ -19,5 +19,3 @@ var petition = () => {
 }
 var res = petition()
 console.log(res)
-
-

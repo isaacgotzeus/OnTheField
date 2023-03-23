@@ -45,7 +45,7 @@ header {
   
   /* Estilos para la sección hero */
   .hero {
-    background-image: url('imgs/Fondo.jpg');
+    background-image: url('imgs/Duela.jpg');
     background-size: cover;
     background-position: center;
     height: 800px;
@@ -177,4 +177,3 @@ header {
   .card p {
     margin-bottom: 0;
   }
-  
