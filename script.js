@@ -11,8 +11,13 @@ var petition = () => {
     };
     fetch('https://sofasport.p.rapidapi.com/v1/events/schedule/live?sport_id=1', options)
         .then(response => response.json())
-        .then(response => {console.log(response) 
-        return response})
+        .then(response => {
+            console.log(response);
+            return response;
+        })
         .catch(err => console.error(err));
 }
 var res = petition()
+console.log(res)
+
+

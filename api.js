@@ -10,4 +10,4 @@ fetch('https://sofasport.p.rapidapi.com/v1/events/schedule/live?sport_id=1', opt
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
-    
+
